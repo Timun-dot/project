@@ -31,6 +31,11 @@
         width: auto;
         height: 100vh;
       }
+      div.banner{
+        background-image: url('{{ asset('assets/images/banner.jpg') }}');
+        background-position: top;
+        width: 100%;
+      }
       li{
         text-align: center;
         color: white;
@@ -56,10 +61,46 @@
         text-align: left;
         padding: 8px;
       }
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgba(136, 30, 185, 0.644);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 0px;
+        background-color: rgba(68, 68, 68, 0.5);
+        border-radius: 8px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+      background: rgba(114, 0, 180, 0.774);
+      border-radius: 8px;
+      }
       </style>
 </head>
 <body>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top" ><i class="fa-thin fa-arrow-up"></i>UP</button>
 <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -82,3 +123,4 @@
           </div>
         </div>
       </nav> 
+      

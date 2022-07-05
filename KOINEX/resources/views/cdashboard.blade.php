@@ -3,6 +3,7 @@
 
 @section('Content')
 
+<div class="banner"></div>
 <div>
   <br><h1 style="text-align: center; color: white;">KOINEX CRYPTOCURRENCY DASHBOARD</h1><br>
 </div>
@@ -67,16 +68,6 @@
   <div><h3 style="text-align: center; text-size: 16px; color: white;"> Latest News About Cryptocurrency</h3><rssapp-magazine id="tLheTsZ5209ble4K"></rssapp-magazine></div>
         <div class="w3-container w3-padding-32" style="background-color: rgba(68, 68, 68, 0.5); width: 100%;" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="background-color: rgba(68, 68, 68, 0.5); width: 100%;">Contact</h3>
-            <p>Lets get in touch and talk about your next project.</p>
-            <form action="{{ route('cdashboard') }}">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-              <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-              <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-              <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-              <button class="w3-button w3-black w3-section" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-              </button>
-            </form>
           </div>
 
         </br></br>

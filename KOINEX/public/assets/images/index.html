@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="ad.size" content="width=468,height=60" />
+  
+    
+ 
+  
+
+  <title>Viewst animation</title>
+  <style>
+    html,
+    body {
+      background: transparent !important;
+      margin: 0px;
+      padding: 0px;
+    }
+    .Canvas-Workspace {
+      left: 0px !important;
+      top: 0px !important;
+      transform: scale(1) !important;
+      overflow: hidden;
+    }
+    .pointer {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  
+    <script>
+
+    var clickTag = "http://koinex.herokuapp.com/";
+
+</script>
+  
+  
+  
+    
+    <a id="bannerClick" target="_blank"  style="width: 468px; height: 60px; cursor: pointer; position: absolute; z-index: 9;" ></a>
+
+
+<script>
+
+      document.getElementById("bannerClick").onclick = function () {  window.open(window.clickTag ,'_blank'); }
+
+</script>
+  
+
+  <div id="container">
+    <div class="Canvas-Workspace Canvas-Workspace_step_CANVAS_MODE_EXPORT" style="width:468px;height:60px;transform:scale(1);transform-origin:0 0 0;background:center / cover no-repeat url(canvas_bg.jpg);overflow:hidden"><div class="CanvasOutline" style="width:100%;height:100%;left:0;top:0;outline:inherit;outline-offset:inherit;position:absolute;z-index:2147483645;pointer-events:none"></div><div style="width:151.71428571428572px;height:45px;changed:;position:absolute;transform-origin:center;top:7.5px;left:20px;z-index:1" draggable="false" data-creative-id="1629296622001191947" class="CanvasItem CanvasItem_preview creativeItem1629296622001191947"><div style="transform:scale(1, 1) rotate(0deg);transform-origin:center;width:151.71428571428572px;height:45px" class="CanvasItem-Modificators CanvasItem-Modificators_type_templateText"><div id="1629296622001191947" class="creativeItemContent 1629296622001191947 CreativeItemContent" draggable="false" style="width:151.71428571428572px;height:45px;changed:;position:static;transform-origin:center;z-index:1;opacity:1;background:transparent;font-size:19px;line-height:1;letter-spacing:0em;color:#ffffff;overflow:hidden;font-style:normal;font-weight:700;font-family:&quot;Montserrat&quot;, Arial;text-align:left;align-items:center;display:flex;justify-content:flex-start;white-space:pre-wrap;word-break:break-word">LIVE CRYPTO PRICE</div></div></div><div style="width:57.214285714285715px;height:45px;changed:;position:absolute;transform-origin:center;top:7px;left:400px;z-index:2" draggable="false" data-creative-id="1629297131371649466" class="CanvasItem CanvasItem_preview creativeItem1629297131371649466"><div style="transform:scale(1, 1) rotate(0deg);transform-origin:center;width:57.214285714285715px;height:45px" class="CanvasItem-Modificators CanvasItem-Modificators_type_templateText"><div id="1629297131371649466" class="creativeItemContent 1629297131371649466 CreativeItemContent" draggable="false" style="width:57.214285714285715px;height:45px;changed:;position:static;transform-origin:center;z-index:2;opacity:1;background:transparent;font-size:19px;line-height:1;letter-spacing:0em;color:#ffffff;overflow:hidden;font-style:normal;font-weight:700;font-family:&quot;Montserrat&quot;, Arial;text-align:left;align-items:center;display:flex;justify-content:flex-start;white-space:pre-wrap;word-break:break-word">JULY 2022</div></div></div><div style="width:179px;height:60px;changed:;position:absolute;transform-origin:center;top:0px;left:166px;z-index:3" draggable="false" data-creative-id="1656993661462801547" class="CanvasItem CanvasItem_preview creativeItem1656993661462801547"><div style="transform:scale(1, 1) rotate(0deg);transform-origin:center;width:179px;height:60px" class="CanvasItem-Modificators CanvasItem-Modificators_type_templateText"><div id="1656993661462801547" class="creativeItemContent 1656993661462801547 CreativeItemContent" draggable="false" style="width:179px;height:60px;changed:;position:static;transform-origin:center;z-index:3;opacity:1;background:transparent;font-size:30px;line-height:1.2;letter-spacing:0em;color:#ffffff;overflow:hidden;font-style:italic;font-weight:700;font-family:&quot;Exo 2&quot;, Arial;text-align:center;align-items:center;display:flex;justify-content:center;white-space:pre-wrap;word-break:break-word">KOINEX</div></div></div><div class="IncludeFonts Canvas-ImportedFonts"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese"/></div></div>
+  </div>
+  
+  <script>
+    var customTrackingEvents = function (tracking) {
+  var trackingObject = {};
+
+  if (tracking) {
+    trackingObject.trackingData = tracking;
+  } else {
+    trackingObject.trackingData = {};
+  }
+
+  /**
+   * Generate random string with given length
+   */
+  trackingObject.randomString = function (length) {
+    return Math.round(
+      Math.pow(36, length + 1) - Math.random() * Math.pow(36, length)
+    )
+      .toString(36)
+      .slice(1);
+  };
+  /**
+   * Replace one of placeholders with random value to prevent caching
+   */
+  trackingObject.replaceRandom = function (contentURL) {
+    var output = contentURL.replace(/\[RANDOM\]/g, this.randomString(12));
+    var currentTimestamp = new Date().getTime();
+
+    output = output.replace(/\[timestamp\]/g, currentTimestamp);
+    output = output.replace(/\[TIMESTAMP\]/g, currentTimestamp);
+
+    output = output.replace(/\%random\%/g, this.randomString(12));
+    output = output.replace(/\%RANDOM\%/g, this.randomString(12));
+
+    return output;
+  };
+  /**
+   * Add tracking link on page
+   */
+  trackingObject.addLink = function (link) {
+    link = this.replaceRandom(link);
+    var trackingImage = document.createElement("img");
+    trackingImage.id = "viewst_tracking_image_" + this.randomString(12);
+    trackingImage.alt = "viewst_tracking_image";
+    trackingImage.style.cssText =
+      "position: absolute; top:-11111px; left: -11111px; width: 1px; height: 1px;";
+    document.body.appendChild(trackingImage);
+
+    var newImg = new Image();
+    newImg.onload = function () {
+      trackingImage.src = this.src;
+    };
+    newImg.src = link;
+  };
+
+  /**
+   * Track one off named events
+   */
+  trackingObject.trackEvent = function (name) {
+    if (this.trackingData[name]) {
+      var currentTrackings = this.trackingData[name];
+      //if it is array of links
+      if (Array.isArray(currentTrackings)) {
+        for (var i = 0; i < currentTrackings.length; i++) {
+          this.addLink(currentTrackings[i]);
+        }
+      }
+      if (typeof currentTrackings === "string") {
+        this.addLink(currentTrackings);
+      }
+    }
+  };
+
+  return trackingObject;
+};
+
+  </script>
+  <script>
+    var tracking = { addLink: function () { } };
+    if (customTrackingEvents) {
+      tracking = customTrackingEvents();
+    }
+    
+    document.getElementById("bannerClick").addEventListener("click", function (e) {
+      
+    });
+  </script>
+  
+
+  
+    
+  
+        <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js'></script>
+  
+
+    
+<script>
+  
+
+  
+  
+  function _isAnimationFirst(curAnimation, animations) {
+  let result = true;
+
+  animations.forEach((anim) => {
+    if (anim.delay < curAnimation.delay) {
+      result = false;
+    }
+  });
+
+  return result;
+}
+
+function renderSceneByNumber(scenes, sceneNumber) {
+  function setSceneBorders(parentNode, scene) {
+    function getBorderCss(borderParams) {
+  
+      if (borderParams && borderParams.active) {
+        return {
+          outline: `${borderParams.borderWidth}px solid ${borderParams.color}`,
+          outlineOffset: `-${borderParams.borderWidth}px`,
+        /*
+          border: `${borderParams.borderWidth}px solid ${borderParams.color}`,
+          borderRadius: `${borderParams.borderRadius}px`
+         */
+        };
+      } 
+      
+      return null;
+    }
+
+    const borderCss = getBorderCss(scene.borderParams);
+
+    parentNode.style.outline = borderCss ?  borderCss.outline : "none";
+    parentNode.style.outlineOffset = borderCss ? borderCss.outlineOffset : "initial";
+    parentNode.style.borderRadius = borderCss ? borderCss.borderRadius : 0;
+  }
+
+  function setSceneBackground(parentNode, scene) {
+    function getBackgroundCss(sceneBackgroundParams) {
+      const BG_TYPE_TRANSPARENT = "transparent";
+      const BG_TYPE_SOLID = "solid";
+      const BG_TYPE_RADIAL = "radial";
+      const BG_TYPE_LINEAR = "linear";
+      const BG_TYPE_IMAGE = "image";
+  
+      let backgroundCSS = null;
+  
+      switch (sceneBackgroundParams.bgType) {
+        case BG_TYPE_LINEAR: {
+          backgroundCSS = `linear-gradient(${sceneBackgroundParams.gradientAngle || 0}deg, ${sceneBackgroundParams.colors["0%"]}, ${sceneBackgroundParams.colors["100%"]})`;
+          break;
+        }
+        case BG_TYPE_RADIAL: {
+          backgroundCSS = `radial-gradient(${sceneBackgroundParams.colors["0%"]}, ${sceneBackgroundParams.colors["100%"]})`;
+          break;
+        }
+        case BG_TYPE_SOLID: {
+          backgroundCSS = `no-repeat ${sceneBackgroundParams.colors["0%"]}`;
+          break;
+        }
+        case BG_TYPE_IMAGE: {
+          const { url, repeat, size, position } = sceneBackgroundParams.image;
+          backgroundCSS = `${position} / ${size} ${repeat} url(${url})`;
+          break;
+        }
+        default: {
+          backgroundCSS = "transparent";
+        }
+      }
+      return backgroundCSS;
+    }
+
+    parentNode.style.background = getBackgroundCss(scene.backgroundParams);
+  }
+
+  function hideSceneItemsNodes(parentNode, scene) {
+    scene.items.forEach((itemId) => {
+      const elem = parentNode.querySelector(`[data-creative-id="${itemId}"]`);
+      elem.style.display = "none";
+    });
+  }
+
+  function showSceneItems(parentNode, scene) {
+    scene.items.forEach((itemId) => {
+      const elem = parentNode.querySelector(`[data-creative-id="${itemId}"]`);
+      elem.style.display = "initial";
+    });
+  }
+
+  var parentCreativeNode = document.querySelector(".Canvas-Workspace");
+
+  Object.keys(scenes).forEach((sceneId, index, array) => {
+    if (index === sceneNumber) {
+      showSceneItems(parentCreativeNode, scenes[sceneId]);
+      setSceneBorders(parentCreativeNode, scenes[sceneId]);
+      setSceneBackground(parentCreativeNode, scenes[sceneId]);
+    } else {
+      hideSceneItemsNodes(parentCreativeNode, scenes[sceneId]);
+    }
+  });
+}
+
+function renderSceneById(scenes, sceneId) {
+  function setSceneBorders(parentNode, scene) {
+    function getBorderCss(borderParams) {
+  
+      if (borderParams && borderParams.active) {
+        return {
+          outline: `${borderParams.borderWidth}px solid ${borderParams.color}`,
+          outlineOffset: `-${borderParams.borderWidth}px`,
+        /*
+          border: `${borderParams.borderWidth}px solid ${borderParams.color}`,
+          borderRadius: `${borderParams.borderRadius}px`
+         */
+        };
+      } 
+      
+      return null;
+    }
+
+    const borderCss = getBorderCss(scene.borderParams);
+
+    parentNode.style.outline = borderCss ?  borderCss.outline : "none";
+    parentNode.style.outlineOffset = borderCss ? borderCss.outlineOffset : "initial";
+    parentNode.style.borderRadius = borderCss ? borderCss.borderRadius : 0;
+  }
+
+  function setSceneBackground(parentNode, scene) {
+    function getBackgroundCss(sceneBackgroundParams) {
+      const BG_TYPE_TRANSPARENT = "transparent";
+      const BG_TYPE_SOLID = "solid";
+      const BG_TYPE_RADIAL = "radial";
+      const BG_TYPE_LINEAR = "linear";
+      const BG_TYPE_IMAGE = "image";
+  
+      let backgroundCSS = null;
+  
+      switch (sceneBackgroundParams.bgType) {
+        case BG_TYPE_LINEAR: {
+          backgroundCSS = `linear-gradient(${sceneBackgroundParams.gradientAngle || 0}deg, ${sceneBackgroundParams.colors["0%"]}, ${sceneBackgroundParams.colors["100%"]})`;
+          break;
+        }
+        case BG_TYPE_RADIAL: {
+          backgroundCSS = `radial-gradient(${sceneBackgroundParams.colors["0%"]}, ${sceneBackgroundParams.colors["100%"]})`;
+          break;
+        }
+        case BG_TYPE_SOLID: {
+          backgroundCSS = `no-repeat ${sceneBackgroundParams.colors["0%"]}`;
+          break;
+        }
+        case BG_TYPE_IMAGE: {
+          const { url, repeat, size, position } = sceneBackgroundParams.image;
+          backgroundCSS = `${position} / ${size} ${repeat} url(${url})`;
+          break;
+        }
+        default: {
+          backgroundCSS = "transparent";
+        }
+      }
+      return backgroundCSS;
+    }
+
+    parentNode.style.background = getBackgroundCss(scene.backgroundParams);
+  }
+
+  function hideSceneItemsNodes(parentNode, scene) {
+    scene.items.forEach((itemId) => {
+      const elem = parentNode.querySelector(`[data-creative-id="${itemId}"]`);
+      elem.style.display = "none";
+    });
+  }
+
+  function showSceneItems(parentNode, scene) {
+    scene.items.forEach((itemId) => {
+      const elem = parentNode.querySelector(`[data-creative-id="${itemId}"]`);
+      elem.style.display = "initial";
+    });
+  }
+
+  var parentCreativeNode = document.querySelector(".Canvas-Workspace");
+
+  Object.keys(scenes).forEach((currSceneId, index, array) => {
+    if (sceneId === currSceneId) {
+      showSceneItems(parentCreativeNode, scenes[currSceneId]);
+      setSceneBorders(parentCreativeNode, scenes[currSceneId]);
+      setSceneBackground(parentCreativeNode, scenes[currSceneId]);
+    } else {
+      hideSceneItemsNodes(parentCreativeNode, scenes[currSceneId]);
+    }
+  });
+}
+
+function _buildMasterTimeline(items, scenes) {
+  let currentSceneId = null;
+  function onUpdate() {
+    const currentTimelineSceneId = masterTimeline.currentLabel();
+    if(currentTimelineSceneId !== currentSceneId) {
+      renderSceneById(scenes, currentTimelineSceneId)
+    }
+  }
+
+  let masterTimeline = gsap.timeline({ paused: false, onUpdate: onUpdate });
+  Object.keys(scenes).forEach((sceneId) => {
+    const sceneItems = items.filter(item => scenes[sceneId].items.includes(item.creativeId));
+    let sceneTimeline = _buildSceneTimeline(sceneItems);
+    masterTimeline.add(sceneTimeline, ">").addLabel(sceneId, "<");
+  });
+  return masterTimeline;
+}
+
+function _buildSceneTimeline(sceneItems) {
+  let sceneTimeline = gsap.timeline();
+  
+  sceneItems.forEach((item) => {
+    let itemTimeline = _buildItemTimeline(
+      document.querySelector(`.creativeItem${item.creativeId}`),
+      item.animations
+    );
+
+    sceneTimeline.add(itemTimeline, 0)
+  });
+
+  return sceneTimeline;
+}
+
+function _buildItemTimeline(node, animations) {
+  let timeline = gsap.timeline();
+  animations.forEach((animation) => {
+    let isRenderAnim = false;
+    if (animation.category === "entrances") {
+      isRenderAnim = _isAnimationFirst(animation, animations);
+    }
+    if (animation.description.fromTo) {
+      timeline.fromTo(
+        node,
+        animation.description.fromTo.from,
+        {
+          ...animation.description.fromTo.to,
+          duration: animation.duration,
+          immediateRender: isRenderAnim,
+        },
+        animation.delay
+      );
+    } else if (animation.description.from) {
+      timeline.from(
+        node,
+        {
+          ...animation.description.from, 
+          duration: animation.duration 
+        },
+        animation.delay
+      );
+    } else if (animation.description.to) {
+      timeline.to(
+        node,
+        {
+          ...animation.description.to,
+          duration: animation.duration,
+          immediateRender: isRenderAnim,
+        },
+        animation.delay
+      );
+    }
+    
+    if (animation.category === "exits") {
+      timeline.to(node, { 
+        duration: 0, 
+        opacity: 0,
+        clearProps: 'scale',
+      }, animation.delay + animation.duration);
+    }
+
+  });
+  return timeline;
+}
+  let items = [{"items":[],"animations":[{"name":"fadeInUp","category":"entrances","subCategory":"fade","description":{"fromTo":{"from":{"yPercent":100,"opacity":0},"to":{"yPercent":0,"opacity":1,"ease":"sine.inOut"}}},"duration":1.4691244239631336,"delay":0,"animationId":"7uT2vw-KVeZnR1yIDeSag"}],"zIndex":1,"type":"templateText","size":{"width":151.71428571428572,"height":45,"changed":true},"opacity":1,"draggable":true,"onEditing":false,"position":{"top":7.5,"left":20,"realTop":0,"realLeft":0,"horizontalAligment":"none","verticalAligment":"none","relative":false,"fixedMode":false},"text":"LIVE CRYPTO PRICE","fontSize":19,"fontUnits":"px","fontColor":"#ffffff","background":false,"backgroundColor":"transparent","fontWeight":"700","fontStyle":"normal","fontFamily":"Montserrat","fontId":"351e220deb101a255f2b98d8724efff7","textAlign":"left","verticalAlign":"center","lineHeight":1,"letterSpacing":0,"variants":[],"feedVariant":{"preview":0,"variantSource":0,"connectedToFeed":false},"id":1,"creativeId":"1629296622001191947","constrainProportions":false,"shadow":{"active":false,"blur":20,"opacity":100,"color":"#000000","position":{"x":0,"y":4}},"modificator":{"rotate":0,"scaleX":1,"scaleY":1,"horizontalMirrored":false,"verticalMirrored":false},"borderParams":{},"fontData":{"isSystemFont":false,"group":"library","family":"Montserrat","preview":{"light":"Montserrat_light.png","dark":"Montserrat_dark.png"},"styles":[{"text":"100_normal","value":"100_normal"},{"text":"200_normal","value":"200_normal"},{"text":"300_normal","value":"300_normal"},{"text":"normal_normal","value":"normal_normal"},{"text":"500_normal","value":"500_normal"},{"text":"600_normal","value":"600_normal"},{"text":"700_normal","value":"700_normal"},{"text":"800_normal","value":"800_normal"},{"text":"900_normal","value":"900_normal"},{"text":"100_italic","value":"100_italic"},{"text":"200_italic","value":"200_italic"},{"text":"300_italic","value":"300_italic"},{"text":"normal_italic","value":"normal_italic"},{"text":"500_italic","value":"500_italic"},{"text":"600_italic","value":"600_italic"},{"text":"700_italic","value":"700_italic"},{"text":"800_italic","value":"800_italic"},{"text":"900_italic","value":"900_italic"}],"url":"https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese","subsets":{"latin":true,"cyrillic":true}}},{"text":"JULY 2022","fontSize":19,"fontUnits":"px","fontColor":"#ffffff","background":false,"backgroundColor":"transparent","fontWeight":"700","fontStyle":"normal","fontFamily":"Montserrat","fontId":"351e220deb101a255f2b98d8724efff7","textAlign":"left","verticalAlign":"center","lineHeight":1,"letterSpacing":0,"variants":[],"feedVariant":{"preview":0,"variantSource":0,"connectedToFeed":false},"items":[],"animations":[{"name":"fadeInUp","category":"entrances","subCategory":"fade","description":{"fromTo":{"from":{"yPercent":100,"opacity":0},"to":{"yPercent":0,"opacity":1,"ease":"sine.inOut"}}},"duration":1.3658986175115206,"delay":1.2534562211981566,"animationId":"9sRosLUB0CeGMVdR9oT8u"}],"zIndex":2,"type":"templateText","size":{"width":57.214285714285715,"height":45,"changed":true},"opacity":1,"draggable":true,"onEditing":false,"id":1,"creativeId":"1629297131371649466","position":{"top":7,"left":400,"realTop":0,"realLeft":0,"horizontalAligment":"none","verticalAligment":"none","relative":false,"fixedMode":false},"constrainProportions":false,"shadow":{"active":false,"blur":20,"opacity":100,"color":"#000000","position":{"x":0,"y":4}},"modificator":{"rotate":0,"scaleX":1,"scaleY":1,"horizontalMirrored":false,"verticalMirrored":false},"borderParams":{},"fontData":{"isSystemFont":false,"group":"library","family":"Montserrat","preview":{"light":"Montserrat_light.png","dark":"Montserrat_dark.png"},"styles":[{"text":"100_normal","value":"100_normal"},{"text":"200_normal","value":"200_normal"},{"text":"300_normal","value":"300_normal"},{"text":"normal_normal","value":"normal_normal"},{"text":"500_normal","value":"500_normal"},{"text":"600_normal","value":"600_normal"},{"text":"700_normal","value":"700_normal"},{"text":"800_normal","value":"800_normal"},{"text":"900_normal","value":"900_normal"},{"text":"100_italic","value":"100_italic"},{"text":"200_italic","value":"200_italic"},{"text":"300_italic","value":"300_italic"},{"text":"normal_italic","value":"normal_italic"},{"text":"500_italic","value":"500_italic"},{"text":"600_italic","value":"600_italic"},{"text":"700_italic","value":"700_italic"},{"text":"800_italic","value":"800_italic"},{"text":"900_italic","value":"900_italic"}],"url":"https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese","subsets":{"latin":true,"cyrillic":true}}},{"items":[],"animations":[{"name":"rotateIn","category":"entrances","subCategory":"rotate","description":{"fromTo":{"from":{"rotate":200,"opacity":0},"to":{"rotate":0,"opacity":1,"ease":"sine.inOut"}}},"duration":1.6393001715265867,"delay":0.4391080617495712,"animationId":"0nFNfL0S36OfdWwLDwDi8"}],"zIndex":3,"type":"templateText","size":{"width":179,"height":60,"changed":true},"opacity":1,"draggable":true,"onEditing":false,"position":{"top":0,"left":166,"realTop":0,"realLeft":0,"horizontalAligment":"none","verticalAligment":"none","relative":false,"fixedMode":false},"text":"KOINEX","fontSize":30,"fontUnits":"px","fontColor":"#ffffff","fontWeight":"700","fontStyle":"italic","fontFamily":"Exo 2","fontData":{"family":"Exo 2","isSystemFont":false,"group":"library","preview":{"light":"Exo 2_light.png","dark":"Exo 2_dark.png"},"styles":[{"text":"100_normal","value":"100_normal"},{"text":"200_normal","value":"200_normal"},{"text":"300_normal","value":"300_normal"},{"text":"normal_normal","value":"normal_normal"},{"text":"500_normal","value":"500_normal"},{"text":"600_normal","value":"600_normal"},{"text":"700_normal","value":"700_normal"},{"text":"800_normal","value":"800_normal"},{"text":"900_normal","value":"900_normal"},{"text":"100_italic","value":"100_italic"},{"text":"200_italic","value":"200_italic"},{"text":"300_italic","value":"300_italic"},{"text":"normal_italic","value":"normal_italic"},{"text":"500_italic","value":"500_italic"},{"text":"600_italic","value":"600_italic"},{"text":"700_italic","value":"700_italic"},{"text":"800_italic","value":"800_italic"},{"text":"900_italic","value":"900_italic"}],"url":"https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese","subsets":{"latin":true,"cyrillic":true}},"fontId":"a5c9f5a4a29777b82ef5c6496ac4c39c","textAlign":"center","verticalAlign":"center","lineHeight":1.2,"letterSpacing":0,"variants":[],"feedVariant":{"preview":0,"variantSource":0,"connectedToFeed":false},"id":5,"background":false,"creativeId":"1656993661462801547","constrainProportions":false,"shadow":{"active":false,"blur":20,"opacity":100,"color":"#000000","position":{"x":0,"y":4}},"modificator":{"rotate":0,"scaleX":1,"scaleY":1,"horizontalMirrored":false,"verticalMirrored":false},"animationReplacementTime":1656993886643}];
+  let scenes = {"defaultScene_20102021":{"sceneId":"defaultScene_20102021","title":"Graphic Fest_7_5_2022_11-56","items":["1629296622001191947","1629297131371649466","1656993661462801547"],"backgroundParams":{"colors":{"0%":"#000000","100%":"#1c1c1c"},"bgType":"image","gradientAngle":0,"image":{"url":"canvas_bg.jpg","imageId":"cf4e22e7-2160-44bf-92c4-dd34da567627","size":"cover","position":"center","repeat":"no-repeat","originalSize":{"width":3992,"height":5976}}},"borderParams":{"active":false,"borderWidth":1,"color":"#000000","borderRadius":0}}};
+  
+  window.GANIMATION = _buildMasterTimeline(items, scenes);
+</script>
+  
+</body>
+
+</html>
