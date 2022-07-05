@@ -65,7 +65,7 @@
 </div>
 <br>
   <br><br>
-  <div><h3 style="text-align: center; text-size: 16px; color: white;"> Latest News About Cryptocurrency</h3><rssapp-magazine id="tLheTsZ5209ble4K"></rssapp-magazine></div>
+  <div><h3 style="text-align: center; text-size: 16px; color: white;"> Latest News About Economy</h3><rssapp-magazine id="tLheTsZ5209ble4K"></rssapp-magazine></div>
         <div class="w3-container w3-padding-32" style="background-color: rgba(68, 68, 68, 0.5); width: 100%;" id="contact">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="background-color: rgba(68, 68, 68, 0.5); width: 100%;">Contact</h3>
           </div>
