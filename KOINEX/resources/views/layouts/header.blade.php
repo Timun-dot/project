@@ -92,10 +92,16 @@
       background: rgba(114, 0, 180, 0.774);
       border-radius: 8px;
       }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 70%;
+      }
       </style>
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top" ><i class="fa-thin fa-arrow-up"></i>UP</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top" >UP</button>
 <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -123,5 +129,6 @@
             <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1521&invert_hover=no" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
         </div>
     </div>
+    <img src="{{ asset('assets/images/banner.jpg') }}" alt="banner" style="width:100%;">
     <br><br> 
       
