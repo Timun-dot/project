@@ -3,7 +3,7 @@
 
 @section('Content')
 
-<div class="banner"></div>
+
 <div>
   <br><h1 style="text-align: center; color: white;">KOINEX CRYPTOCURRENCY DASHBOARD</h1><br>
 </div>

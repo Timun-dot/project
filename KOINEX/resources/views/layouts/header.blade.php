@@ -31,11 +31,6 @@
         width: auto;
         height: 100vh;
       }
-      div.banner{
-        background-image: url('{{ asset('assets/images/banner.jpg') }}');
-        background-position: top;
-        width: 100%;
-      }
       li{
         text-align: center;
         color: white;
@@ -122,5 +117,11 @@
             </ul>
           </div>
         </div>
-      </nav> 
+      </nav>
+      <div style="height:62px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;">
+        <div style="height:40px; padding:0px; margin:0px; width: 100%;">
+            <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1521&invert_hover=no" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+        </div>
+    </div>
+    <br><br> 
       
