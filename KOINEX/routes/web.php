@@ -21,7 +21,6 @@ Route::get('/', [CryptoController::class, 'index'])->name('home');
 Route::get('/cdashboard', [CryptoController::class, 'getData'])->name('cdashboard');
 Route::get('/about', [CryptoController::class, 'about'])->name('about');
 Route::get('/info', [CryptoController::class, 'info'])->name('info');
-Route::get('/auth', [CryptoController::class, 'admin'])->name('auth');
 
 Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
 

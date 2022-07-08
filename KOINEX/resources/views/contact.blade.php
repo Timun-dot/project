@@ -18,12 +18,7 @@
                             Contact Us
                         </div>
                         <div class="card-body">
-                            @if(Session::has('message_sent'))
-                                <div class="alert alert-success" role="alert">
-                                    {{ Session::get('message_sent') }}
-                                </div>
-                            @endif
-                            <form method="POST" action="{{ route('contact.send') }}" enctype="multipart/form-data">
+                            <form method="POST" action="{{ route('contact') }}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
                                     <label for="name">Name</label>

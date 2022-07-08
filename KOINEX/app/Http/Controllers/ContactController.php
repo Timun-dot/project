@@ -1,14 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Mail\ContactMail;
 use Illuminate\Http\Request;
-use Mail;
+
 
 class ContactController extends Controller
 {
-    public function contact()
+    public function contact(Request $request)
     {
         return view('contact');
     }
