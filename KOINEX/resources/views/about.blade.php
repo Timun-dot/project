@@ -12,8 +12,7 @@
       header{
         width: auto;
         height: 100vh;
-                
-                }
+      }
       body {
         background-image: url('{{ asset('assets/images/background2.jpg')  }}');
         position: relative;
@@ -23,27 +22,17 @@
         background-size: cover;
         width: auto;
         height: 100vh;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
       }
       li{
         text-align: center;
         color: white;
       }
-
-      html {
-        box-sizing: border-box;
-      }
-
-      *, *:before, *:after {
-        box-sizing: inherit;
-      }
-
+      
       .column {
-        float: left;
         width: 30%;
         margin-bottom: 15px;
-        padding: 0 8px;
+        align-self: center;
+        padding-left: 100px;
       }
 
       .card {
@@ -52,20 +41,12 @@
       }
 
       .about-section {
-        padding: 40px;
+        align-self: center;
+        padding-left: 60px;
+        padding-right: 40px;
         text-align: center;
         background-color: #474e5d;
         color: white;
-      }
-
-      .container {
-        padding: 0 13px;
-      }
-
-      .container::after, .row::after {
-        content: "";
-        clear: both;
-        display: table;
       }
 
       .title {
@@ -87,14 +68,6 @@
       .button:hover {
         background-color: #555;
       }
-
-      footer {
-          position:relative;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          text-align: center;
-        }
       </style>
 </head>
 <body>
@@ -122,61 +95,63 @@
         </div>
       </nav> 
 
-      <div style="height: 650px">
-        <div class="about-section">
-          <h1>About Us Page</h1>
-          <p>Some text about who we are and what we do.</p>
-          <p>Resize the browser window to see that this page is responsive by the way.</p>
-        </div>
-        
-        <h2 style="text-align:center; color:white;">Our Team</h2>
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="{{ asset('assets/images/user.png') }}" alt="Jane" style="width:35%">
-              <div class="container">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>jane@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
+      <section style="align-content: center">
+        <div style="height: 650px">
+          <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>Some text about who we are and what we do.</p>
+            <p>Resize the browser window to see that this page is responsive by the way.</p>
           </div>
-        
-          <div class="column">
-            <div class="card">
-              <img src="{{ asset('assets/images/user.png') }}" alt="Mike" style="width:35%">
-              <div class="container">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="column">
-            <div class="card">
-              <img src="{{ asset('assets/images/user.png') }}" alt="John" style="width:35%">
-              <div class="container">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>john@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
           
-  <footer class="footer nt-auto py-3 bg-dark" style="display: flex">
-    <div class="container text-center">
-        <span class="text-muted">@Cryptocurrency(2022)</span>
-    </div>
-  </footer>
+          <h2 style="text-align:center; color:white;">Our Team</h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="Jane" style="width:35%">
+                <div class="container">
+                  <h2>Jane Doe</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>jane@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="Mike" style="width:35%">
+                <div class="container">
+                  <h2>Mike Ross</h2>
+                  <p class="title">Art Director</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>mike@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="John" style="width:35%">
+                <div class="container">
+                  <h2>John Doe</h2>
+                  <p class="title">Designer</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>john@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+          
+      <footer class="footer nt-auto py-3 bg-dark">
+        <div class="container text-center">
+           <span class="text-muted">@Cryptocurrency(2022)</span>
+        </div>
+    </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

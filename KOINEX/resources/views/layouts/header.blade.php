@@ -20,7 +20,7 @@
         width: auto;
         height: 100vh;
                 
-                }
+      }
       body {
         background-image: url('{{ asset('assets/images/background2.jpg')  }}');
         position: relative;
