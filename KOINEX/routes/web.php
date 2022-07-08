@@ -24,4 +24,5 @@ Route::get('/info', [CryptoController::class, 'info'])->name('info');
 
 Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
 
-Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
+Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::get('/contact', [ContactController::class, 'submit'])->name('contact.submit');
