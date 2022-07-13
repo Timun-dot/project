@@ -17,7 +17,7 @@ public function up()
 	$table->increments('id'); 
 	$table->string('name'); 
 	$table->string('email'); 
-        $table->string('phone_number')->nullable(); 
+    $table->string('phone_number')->nullable(); 
 	$table->string('subject')->nullable();
 	$table->text('message'); 
 	$table->timestamps(); 
