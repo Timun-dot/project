@@ -98,6 +98,10 @@
         margin-right: auto;
         height: 70%;
       }
+      hr {
+        border: 5px solid black;
+        border-radius: 5px;
+      }
       </style>
 </head>
 <body>
@@ -130,5 +134,6 @@
         </div>
     </div>
     <img src="{{ asset('assets/images/banner.jpg') }}" alt="banner" style="width:100%;">
+    <hr>
     <br><br> 
       
