@@ -39,7 +39,7 @@
         font-family: arial, sans-serif;
         border-collapse: collapse;
         background-color: rgba(68, 68, 68, 0.60);
-        width: 100%;
+        width: inherit;
       }
 
       td, th {

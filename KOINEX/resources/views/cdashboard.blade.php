@@ -65,9 +65,10 @@
 </div>
 <br>
   <br><br>
-  <div><h3 style="text-align: center; text-size: 16px; color: white;"> Latest News About Economy</h3><rssapp-magazine id="tLheTsZ5209ble4K"></rssapp-magazine></div>
-        </br>
-</div>
-
+  <div>
+    <h3 style="text-align: center; text-size: 16px; color: white;"> Latest News About Cryptocurrency</h3>
+    <a href="https://cryptopanic.com/" target="_blank" data-news_feed="trending" data-bg_color="#2B2B2CC4" data-text_color="#FFFFFF" data-link_color="#FFFFFF" data-header_bg_color="#010101" data-header_text_color="#FFFFFF" data-posts_limit="10" data-font_family="mono" data-font_size="15" data-currencies="BTC" class="CryptoPanicWidget">News</a>
+  </div>      
+  </br>
 
 @endsection
