@@ -184,7 +184,7 @@
             </div>
           </div>
 
-          <div style="height: 1440px;">
+          <div style="height: 400px;">
           </div>
 
           <h2 style="text-align:center; color:white;">Our Team</h2>
