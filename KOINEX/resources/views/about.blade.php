@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crypto-Dashboard</title>
+    <title>About Us Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/about.css') }}">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
       header{
         width: auto;
         height: 100vh;
@@ -22,6 +23,7 @@
         background-size: cover;
         width: auto;
         height: 100vh;
+        font-family: 'Montserrat', sans-serif;
       }
       li{
         text-align: center;
@@ -68,6 +70,35 @@
       .button:hover {
         background-color: #555;
       }
+
+      .overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        width: 0;
+        height: 20rem;
+        transition: .5s ease;
+      }
+
+      .text {
+        white-space: nowrap; 
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .left-image:hover .overlay {
+        width: 40rem;
+      }
+
       </style>
 </head>
 <body>
@@ -96,23 +127,77 @@
       </nav> 
 
       <section style="align-content: center">
-        <div style="height: 650px">
-          <div class="about-section">
-            <h1>About Us Page</h1>
-            <p>Some text about who we are and what we do.</p>
-            <p>Resize the browser window to see that this page is responsive by the way.</p>
+        <div style="height: auto; width: auto">          
+          <div style="text-align: center; color: white; background-color:rgba(0, 0, 0, 0.5)">
+            <h3>About Us</h3>
+            <p style="font-size: 18px">The KOINEX is a Malaysia-based company. It is engaged in the business of providing consulting services and education for distributed ledger technologies for the building of technological infrastructure and enterprise blockchain technology solutions.</p>
+            <p style="font-size: 18px">Some text about who we are and what we do.</p>
+            <p style="font-size: 18px">We are the new team that have passion to create cryptocurrency as main currency. Also bring the new response to the community about cryptocurrency.</p>
           </div>
-          
+
+          <br><br>
+          <div class="left-image-post" style="color:white">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img style="padding-left: 10px; width:40rem ; height:20rem;" src="{{ asset('assets/images/tech.jpg') }}" alt=""/> 
+                  <div class="overlay">
+                    <div class="text"><b>Now or never!</b></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Our Vision</h4>
+                  <p>
+                    Expand and explore more about blockchains. Become the most realible website for cryptocurrency in terms of listing wesbite.
+                  </p>
+                  <p>
+                    To accelerate the world's transition to sustainable energy. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="right-image-post" style="color: white">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Our Mision</h4>
+                  <p>
+                    We are focus more to cryptocurrency rather than other blockchains technology. We want to explore more in the blockchains and develop somethings that give benefit to other people.
+                  </p>
+                  <p>
+                    KOINEX works to enhance the dignity and quality of individuals by strengthening knowlegde, eliminating barriers from scared to technology, and helping people in need reach their full potential through learning and the power of cryptocurrency.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img style="padding-right: 10px; width:40rem ; height:20rem; " src="{{ asset('assets/images/crypto1.jpg') }}" alt=""/> 
+                  <div class="right-overlay">
+                    <div class="text"><b>Change your life</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="height: 1440px;">
+          </div>
+
           <h2 style="text-align:center; color:white;">Our Team</h2>
           <div class="row">
             <div class="column">
               <div class="card">
                 <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="Jane" style="width:35%">
                 <div class="container">
-                  <h2>Jane Doe</h2>
-                  <p class="title">CEO & Founder</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>jane@example.com</p>
+                  <h2>Muhd Iqmal</h2>
+                  <p class="title">Founder and Developer</p>
+                  <p>"Word hard until reach your limit."</p>
+                  <p>m.iqmal3005@gmail.com</p>
+                  <p>Feel free to contact us with your comment or question.</p>
                   <p><a href="{{ route('contact-us') }}"><button class="button">Contact</button></a></p>
                 </div>
               </div>
@@ -122,10 +207,11 @@
               <div class="card">
                 <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="Mike" style="width:35%">
                 <div class="container">
-                  <h2>Mike Ross</h2>
-                  <p class="title">Art Director</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>mike@example.com</p>
+                  <h2>Isabelle</h2>
+                  <p class="title">Project Manager and Designer</p>
+                  <p>"Build your own dreams or someone else will hire you."</p>
+                  <p>Isabelle123@gmail.com</p>
+                  <p>Feel free to contact us with your comment or question.</p>
                   <p><a href="{{ route('contact-us') }}"><button class="button">Contact</button></a></p>
                 </div>
               </div>
@@ -135,10 +221,11 @@
               <div class="card">
                 <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="John" style="width:35%">
                 <div class="container">
-                  <h2>John Doe</h2>
+                  <h2>Umar Arif</h2>
                   <p class="title">Designer</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>john@example.com</p>
+                  <p>"Manage your time or time will manage you."</p>
+                  <p>UmarArif@gmail.com</p>
+                  <p>Feel free to contact us with your comment or question.</p>
                   <p><a href="{{ route('contact-us') }}"><button class="button">Contact</button></a></p>
                 </div>
               </div>
