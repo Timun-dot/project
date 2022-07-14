@@ -176,15 +176,12 @@
               <div class="col-md-6">
                 <div class="right-image">
                   <img style="padding-right: 10px; width:40rem ; height:20rem; " src="{{ asset('assets/images/crypto1.jpg') }}" alt=""/> 
-                  <div class="right-overlay">
-                    <div class="text"><b>Change your life</b></div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div style="height: 400px;">
+          <div style="height: 90px;">
           </div>
 
           <h2 style="text-align:center; color:white;">Our Team</h2>
