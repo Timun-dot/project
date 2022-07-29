@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="{{ asset('assets/auth/css/styles.css') }}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="{{ asset('assets/images/default.png') }}" type="image/icon type">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
                 
@@ -147,7 +148,6 @@
             </style>
     </head>
     <body>
-        <div class="div"><rssapp-ticker id="tLheTsZ5209ble4K"></rssapp-ticker></div>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">

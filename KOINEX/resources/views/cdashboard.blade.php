@@ -28,7 +28,7 @@
           <th>Crypto</th>
           <th>Name</th>
           <th>Price</th>
-          <th>1d</th>
+          <th>Symbol</th>
           <th>7d</th>
           <th>30d</th>
           <th>Circulating Supply</th>
@@ -41,11 +41,11 @@
               <td><img src={{ $currency['logo_url'] }} style="width: 25px; margin:0.5px auto;"></td>
               <td>{{ $currency['name'] }}</td>
               <td>RM {{ number_format($currency['price'],2) }}</td>
-              <td>{{ $loop->iteration }}</td>
-              @if($currency['7d']['price_change_pct']>0)
-              <td style="color: rgb(83, 255, 83); font-weight:bold;">{{ number_format($currency['7d']['price_change_pct'],2) }}</td>
+              <td>{{ $currency['symbol'] }}</td>
+              @if($currency['1d']['price_change_pct']>0)
+              <td style="color: rgb(83, 255, 83); font-weight:bold;">{{ number_format($currency['1d']['price_change_pct'],2) }}</td>
               @else
-              <td style="color: rgb(255, 58, 58); font-weight:bold;">{{ number_format($currency['7d']['price_change_pct'],2) }}</td>
+              <td style="color: rgb(255, 58, 58); font-weight:bold;">{{ number_format($currency['1d']['price_change_pct'],2) }}</td>
               @endif
               @if($currency['30d']['price_change_pct']>0)
               <td style="color: rgb(83, 255, 83); font-weight:bold;">{{ number_format($currency['30d']['price_change_pct'],2) }}</td>

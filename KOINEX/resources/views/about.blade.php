@@ -8,6 +8,7 @@
     <title>About Us Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/about.css') }}">
+    <link rel="icon" href="{{ asset('assets/images/default.png') }}" type="image/icon type">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
       header{
@@ -71,32 +72,22 @@
         background-color: #555;
       }
 
-      .overlay {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
-        background-color: rgba(255, 255, 255, 0.2);
-        overflow: hidden;
-        width: 0;
-        height: 20rem;
-        transition: .5s ease;
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
       }
 
-      .text {
-        white-space: nowrap; 
-        color: black;
-        font-size: 20px;
-        position: absolute;
-        overflow: hidden;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 0px;
+        background-color: rgba(68, 68, 68, 0.5);
+        border-radius: 8px;
       }
 
-      .left-image:hover .overlay {
-        width: 40rem;
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgba(114, 0, 180, 0.774);
+        border-radius: 8px;
       }
 
       </style>
@@ -141,9 +132,6 @@
               <div class="col-md-6">
                 <div class="left-image">
                   <img style="padding-left: 10px; width:40rem ; height:20rem;" src="{{ asset('assets/images/tech.jpg') }}" alt=""/> 
-                  <div class="overlay">
-                    <div class="text"><b>Now or never!</b></div>
-                  </div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -188,7 +176,6 @@
           <div class="row">
             <div class="column">
               <div class="card">
-                <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="Jane" style="width:35%">
                 <div class="container">
                   <h2>Muhd Iqmal</h2>
                   <p class="title">Founder and Developer</p>
@@ -202,7 +189,6 @@
 
             <div class="column">
               <div class="card">
-                <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="Mike" style="width:35%">
                 <div class="container">
                   <h2>Isabelle</h2>
                   <p class="title">Project Manager and Designer</p>
@@ -216,7 +202,6 @@
           
             <div class="column">
               <div class="card">
-                <img style= "padding-left:40px; width: 140px; height:100px;" src="{{ asset('assets/images/user.png') }}" alt="John" style="width:35%">
                 <div class="container">
                   <h2>Umar Arif</h2>
                   <p class="title">Designer</p>

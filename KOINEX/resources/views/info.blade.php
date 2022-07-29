@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="{{ asset('assets/auth/css/styles.css') }}" rel="stylesheet" />
+    <link rel="icon" href="{{ asset('assets/images/default.png') }}" type="image/icon type">
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <style>
 
@@ -66,8 +67,46 @@
             color: #111;
         }
 
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgba(136, 30, 185, 0.644);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+        /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 0px;
+        background-color: rgba(68, 68, 68, 0.5);
+        border-radius: 8px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+      background: rgba(114, 0, 180, 0.774);
+      border-radius: 8px;
+      }
+
         </style>
     <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top" >UP</button>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="{{ route('home') }}">KOINEX</a>
@@ -186,6 +225,26 @@
         <script src="{{ asset('assets/auth/demo/chart-bar-demo.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
         <script src="{{ asset('assets/auth/js/datatables-simple-demo.js') }}}"></script>
-    
+        <script>
+          //Get the button
+          var mybutton = document.getElementById("myBtn");
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
     </body>
     </head>

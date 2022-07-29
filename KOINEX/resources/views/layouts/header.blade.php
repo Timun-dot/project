@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <link href="{{ asset('assets/auth/css/styles.css') }}" rel="stylesheet" />
+    <link rel="icon" href="{{ asset('assets/images/default.png') }}" type="image/icon type">
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <style>
       header{
@@ -50,7 +51,7 @@
         padding: 6px;
       }
 
-      tr:hover {background-color: #e9e9e9;} {
+      tr:hover {background-color: rgba(92, 92, 92, 0.6);} {
         border-bottom: 1px solid #ddd;
         background-color: #aaaaaa;
         text-align: left;
